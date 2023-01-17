@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#who {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.alert-warning {
+  width: 400px;
+  margin: 0% auto;
+}
+
+.card {
+  width: 500px;
+  margin: 0% auto;
+  border: 2px solid green;
+  margin-top: 20px;
+}
