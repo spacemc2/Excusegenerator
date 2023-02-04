@@ -18,15 +18,15 @@ let when = [
 
 window.onload = function() {
   //write your code here
-  var whoValue = who[Math.floor(Math.random() * 4)];
+  var whoValue = who[Math.floor(Math.random() * who.length)];
   var mssg =
     whoValue +
     " " +
-    action[Math.floor(Math.random() * 4)] +
+    action[Math.floor(Math.random() * action.length)] +
     " " +
-    what[Math.floor(Math.random() * 4)] +
+    what[Math.floor(Math.random() * what.length)] +
     " " +
-    when[Math.floor(Math.random() * 4)];
+    when[Math.floor(Math.random() * when.length)];
   document.getElementById("first").innerHTML =
     "You may think I'm not serious but...";
   console.log("Miguel Project!");
@@ -46,4 +46,6 @@ window.onload = function() {
     document.getElementById("who").src =
       "https://img.freepik.com/premium-vector/cute-bird-cartoon_33070-3817.jpg";
   }
+
+  console.log(who.length);
 };
